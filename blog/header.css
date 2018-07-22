@@ -2,10 +2,6 @@ header h1 a{
 	font-family: 'Oswald', sans-serif;
 }
 
-header a {
-	padding-right: 10px;
-}
-
 .end_of_header {
     border-bottom: 1px solid gray;
     margin-bottom: 30px;
