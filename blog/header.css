@@ -1,4 +1,4 @@
-header h1 a{
+header h1 , h6, a{
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -7,14 +7,22 @@ header h1 a{
     margin-bottom: 30px;
 }
 
-h1 a{
+header h1 a{
     color: gray;
     text-decoration: none;
+}
+
+header h6{
+	color: gray;
 }
 
 header h1 :hover{
 	text-decoration: none;
 	color: #595959;	
+}
+
+h1, h6 {
+	display: inline;
 }
 
 
