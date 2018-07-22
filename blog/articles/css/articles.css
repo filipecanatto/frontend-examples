@@ -1,32 +1,7 @@
-.container {
-	margin: 0 auto;
-	width: 960px;
-}
-
-header h1 {
-	display: inline;
-	margin-right: 50px;
-}
-
-header a {
-	padding-right: 10px;
-}
-
-.end_of_header {
-    border-bottom: 1px solid gray;
-    margin-bottom: 30px;
-}
-
 h1 a{
     color: gray;
     text-decoration: none;
 }
-
-header h1 :hover{
-	text-decoration: none;
-	color: #595959;	
-}
-
 
 article h2{
 	margin-bottom: 30px;
