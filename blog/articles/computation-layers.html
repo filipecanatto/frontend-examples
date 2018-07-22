@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang='pt-BR'>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>filipecanatto</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+      <link rel='stylesheet' href='../blog-bootstrap.css'>
+
+      <link rel='stylesheet' href='css/articles.css'>
+      <!-- Google fonts -->
+   </head>
+   <body>
+        <div>
+                <header class='container' style="padding-top: 30px">
+                    <h1>
+                        <a href='../index.html'>
+                            <span style="color:blue;font-weight:bold">F</span>ilipe
+                            <span style="color:blue;font-weight:bold">C</span>anatto
+                        </a>
+                    </h1>
+                    <nav>
+                        <a class="p-1 text-muted" href="#">Recentes</a>
+                        <a class="p-2 text-muted" href="#">Arquivos</a>
+                        <a class="p-2 text-muted" href="#">Sobre</a>
+                    </nav>
+                </header>
+                <div class='end_of_header'> </div>
+        </div>
+      <div class='container'>
+         <article>
+            <h2>As Principais Camadas de Um Computador</h2>
+            <p>
+               Como tudo na vida um computador também pode ser dividido em partes para facilitar seu estudo e diminuir sua complexidade. Pode dividir o computador em três partes: aplicação de usuário, sistema operacional e hardware.
+               Nesse artigo vou sintetizar cada uma dessas camadas para que o leitor tenha uma visão superficial de como o computador esta organizado.
+            </p>
+            <P>
+               Nesse artigo vou sintetizar cada uma dessas camadas para que o leitor tenha uma visão superficial de como o computador esta organizado.
+            </P>
+            <h3 >Programas de usuário</h3>
+            <p>
+               São programas usados pelo usuário final, seja ele um economista organizando seu trabalho em um editor de planilhas, ou um engenheiro civil construindo um projeto de um novo edifício usando um DAC (desenho assistido por computador), ou um programador escrevendo seus programas em um editor de texto. Esse é motivo pelo qual os computadores existem, para prover suporte a diversas áreas através de programas de usuário. Esses programas são criados usando uma linguagem de programação, que sucintamente falando são maneiras de instruir o hardware a fazer alguma coisa.
+            </p>
+            <h3>Sistema operacional</h3>
+            <p>
+               Quando criamos nosso programa ele não funciona de forma independente, ele sempre vai interagir com o sistema operacional para pedir suporte, mas oque seria exatamente esse suporte?. São funções já prontas disponíveis em memória que podem ser usadas pelos programas de usuário. Funções que implementam funcionalidades de propósito geral como escrever dados em dispositivo de saída, ler dados de um dispositivo de entrada, alocar memória, gerenciar a memória para que cada programa tenha sua área reservada, ou seja, que nenhum programa leia dados de outro programa, ou escreva em uma posição de memória que está sendo usada por outro programa. 
+            </p>
+            <h4>Chamadas de Sistema</h4>
+            <p>Quando um programa solicita uma função do sistema operacional ele faz isso através de uma chamada de sistema, quando isso acontece o programa para de executar e o sistema operacional entra em cena.
+               O programa pode interagir diretamente com o sistema operacional ou através de uma biblioteca padrão disponibilizada junto com o sistema operacional, no linux temos a glibc (GNU library C). 
+            </p>
+            <h3>O Kernel</h3>
+            <p>
+               O componente principal do sistema operacional é o kernel (do inglês núcleo), é nele que ficam implementadas todas as interfaces das chamadas de sistemas, e também é ele que gerencia os drivers e a memoria. Na figura acima foi usada um figura que mostra a arquitetura de um S.O linux porem o conceito de kernel esta presente em todas as arquiteturas de sistemas operacionais.
+            </p>
+            <h3>Hardware</h3>
+            <p>
+               Todas as camadas acima da camada do hardware só podem ser visualizadas através de abstrações e diagramas, mas o harware é algo físico podendo ser visto, tocado e sentido. É ele o responsável por executar as instruções criadas pelo programador através de uma linguagem de programação.
+               O Hardware do computador é composto de vários componentes, sendo os principais entrada/saída ,processador e a memoria. O hardware realiza algumas operações básicas para qualquer computador, são elas: entrada e saída de dados, processamento e armazenamento.
+               A interação entre esses componentes é basicamente da seguinte forma: o processador obtém dados e instruções da memoria, os dispositivos de entrada guardam dados na memoria e os dispositivos de saída leem dados da memoria e apresentam o resultado da computação para o usuário através de um monitor ou para outro computador através de uma placa de rede (o hardware responsável por conectar um computador a uma rede computacional).
+               Os cursos de ciência da computação e analise de sistemas não se aprofundam muito no estudo do hardware, geralmente o mais profundo que chegamos é até portas lógicas.
+               " Dispositivos de hardware são construídos a partir de pacote integrados de portas lógicas. E essas portas, por sua vez, podem ser construídas de portas lógicas elementares como a Nand ou Nor, é claro que cada uma dessas portas consiste de alguns dispositivos de switching. tipicamente implementados por transistors. e cada transistor é construído de - Bem, nós não iremos mais longe, porque é onde a ciência da computação acaba e a física começa. " (grifo do autor).
+               A frase acima esta no livro Building a Modern Computer from First Principles. Isso significa que detalhes do hardware não estão no escopo de estudo da ciência da computação, sendo assim não precisamos saber como certas tarefas são implementadas, podemos apenas saber oque elas fazem e assim consumir seus serviços.
+            </p>
+            <h3>Conclusão</h3>
+            <p>
+               Espero que esse artigo ajude colegas a ter uma visão mais abrangente do computador, e não velo apenas como uma caixa preta.
+            </p>
+            <h3>
+               Bibliografia
+            </h3>
+         </article>
+      </div>
+
+        <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+   </body>
+</html>
